@@ -2,7 +2,7 @@
 //  TableViewController.swift
 //  LocalNotification
 //
-//  Created by Debash on 05.06.2018.
+//  Created by Nikita Chekan on 14.03.2023.
 //  Copyright © 2018 swiftbook.ru. All rights reserved.
 //
 
@@ -13,7 +13,7 @@ class TableViewController: UITableViewController {
     let notifications = ["Local Notification",
                          "Local Notification with Action",
                          "Local Notification with Content",
-                         "Push Notification with  APNs",
+                         "Push Notification with APNs",
                          "Push Notification with Firebase",
                          "Push Notification with Content"]
 

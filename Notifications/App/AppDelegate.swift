@@ -1,9 +1,9 @@
 //
-//  AppDelegate.swift
-//  Notifications
+//  TableViewController.swift
+//  LocalNotification
 //
-//  Created by Alexey Efimov on 21.06.2018.
-//  Copyright © 2018 Alexey Efimov. All rights reserved.
+//  Created by Nikita Chekan on 14.03.2023.
+//  Copyright © 2018 swiftbook.ru. All rights reserved.
 //
 
 import UIKit
