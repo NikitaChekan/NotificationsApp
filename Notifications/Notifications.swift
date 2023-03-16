@@ -8,10 +8,12 @@
 
 import UIKit
 import UserNotifications
+import Firebase
 
 class Notifications: NSObject, UNUserNotificationCenterDelegate {
     
     let notificationCenter = UNUserNotificationCenter.current()
+    let messagingDelegate = Messaging.messaging()
     
     func requestAuthorization() {
         notificationCenter.requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
@@ -105,6 +107,14 @@ class Notifications: NSObject, UNUserNotificationCenterDelegate {
         }
         
         completionHandler()
+    }
+    
+}
+
+extension Notifications: MessagingDelegate {
+    
+    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
+        print("\nFirebase registration token: \(String(describing: fcmToken))")
     }
     
 }

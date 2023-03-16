@@ -23,6 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         notifications.notificationCenter.delegate = notifications
         
         FirebaseApp.configure()
+        
+        notifications.messagingDelegate.delegate = notifications
+        
         return true
     }
 
